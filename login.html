@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        textarea,
+        select {
+            outline: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 800px;
+            margin: auto;
+            padding-top: 80px;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        table tr td {
+            font-size: 16px;
+            color: #666;
+        }
+
+        table tr td[align=right] {
+            color: #000;
+            font-weight: 500;
+        }
+
+        table tr a {
+            text-decoration: none;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: rgb(192, 13, 13);
+            border: 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>欢迎加入我们</h1>
+    <form>
+        <table cellspacing="25">
+            <tr class="h">
+                <td align="right">用户昵称:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr class="h">
+                <td align="right">密码:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr class="h">
+                <td align="right">性别:</td>
+                <td><input type="radio" name="sex">男
+                    <input type="radio" name="sex">女
+                    <input type="radio" name="sex">保密
+                </td>
+            </tr>
+            <tr class="h">
+                <td align="right">你会的技术:</td>
+                <td>
+                    <input type="checkbox">java
+                    <input type="checkbox">c
+                    <input type="checkbox">js
+                    <input type="checkbox">python
+                </td>
+            </tr>
+            <tr class="h">
+                <td align="right">你从事年限:</td>
+                <td>
+                    <select>
+                        <option value="">一年</option>
+                        <option value="">二年</option>
+                        <option value="">三年</option>
+                        <option value="">四年</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="h">
+                <td align="right">请描述自己:</td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr class="h">
+                <td align="right">验证码:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="checkbox">
+                    我已阅读并同意<a href="javascript:;">《网站服务》</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
